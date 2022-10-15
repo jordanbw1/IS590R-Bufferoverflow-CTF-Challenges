@@ -1,4 +1,4 @@
-	.file	"challenge1.c"
+	.file	"challenge2.c"
 	.text
 	.section	.rodata
 	.align 8

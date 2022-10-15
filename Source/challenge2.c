@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int secret = 0x01234567;
+    int secret = 0xdeadbeef;
     char name[4] = {0};
     read(0, name, 0x100);
-    if (secret != 0x01234567) {
-        puts("Wow! Here's the secret flag byu22ind{ThisIsJustTheBeginning;)}");
+    if (secret == 0x41424344) {
+        puts("Wow! Here's the secret flag byu22ind{ThisIsntEvenMyFinalForm}");
     } else {
         puts("I guess you're not cool enough to see my secret");
     }
