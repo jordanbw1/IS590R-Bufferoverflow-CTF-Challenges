@@ -56,6 +56,9 @@ failure:
 	.align 8
 .LC2:
 	.string	"Heres a tip to help you, your secret was: %x\n"
+	.align 8
+.LC3:
+	.string	"Heres a tip to help you, your comparison was: %x\n"
 	.text
 	.globl	main
 	.type	main, @function
@@ -91,6 +94,12 @@ main:
 	movl	-4(%rbp), %eax
 	movl	%eax, %esi
 	leaq	.LC2(%rip), %rax
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	movl	-8(%rbp), %eax
+	movl	%eax, %esi
+	leaq	.LC3(%rip), %rax
 	movq	%rax, %rdi
 	movl	$0, %eax
 	call	printf@PLT

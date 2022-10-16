@@ -10,11 +10,11 @@ void failure() {
 
 int main() {
     int secret = 0xfeefdeed;
-    int secretCompare = 0x5249434B;
+    int comparison = 0x5249434B;
     char name[8] = {0};
     read(0, name, 0x100);
     
-    if (secret > secretCompare) {
+    if (secret > comparison) {
         // failure();
         printFlag();
     }
@@ -24,6 +24,7 @@ int main() {
     }
 
     printf("Heres a tip to help you, your secret was: %x\n",secret);
+    printf("Heres a tip to help you, your comparison was: %x\n",comparison);
 
     return 0;
 }
