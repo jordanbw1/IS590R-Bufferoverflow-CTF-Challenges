@@ -26,6 +26,13 @@ At this point, you can type a string that will go into the program. It's up to y
 <br/>
 <br/>
 
+# Challenges
+Open the "Challenges" folder to get started with the CTF challenges.
+
+
+<br/>
+<br/>
+
 # Compiling the Source yourself
 You do not need to compile from the files in the Source folder. However, if you desire to know how to compile these files into the .s assembly files, this is the command you use:
 ```bash
