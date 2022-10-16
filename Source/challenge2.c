@@ -2,7 +2,7 @@
 
 int main() {
     int secret = 0xdeadbeef;
-    char name[4] = {0};
+    char name[8] = {0};
     read(0, name, 0x100);
     if (secret == 0x41424344) {
         puts("Wow! Here's the secret flag byu22ind{ThisIsntEvenMyFinalForm}");

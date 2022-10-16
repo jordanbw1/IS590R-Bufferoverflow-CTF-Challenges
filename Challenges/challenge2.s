@@ -24,8 +24,8 @@ main:
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
 	movl	$-559038737, -4(%rbp)
-	movl	$0, -8(%rbp)
-	leaq	-8(%rbp), %rax
+	movq	$0, -12(%rbp)
+	leaq	-12(%rbp), %rax
 	movl	$256, %edx
 	movq	%rax, %rsi
 	movl	$0, %edi

@@ -22,10 +22,12 @@ main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	subq	$16, %rsp
+	subq	$32, %rsp
 	movl	$19088743, -4(%rbp)
-	movl	$0, -8(%rbp)
-	leaq	-8(%rbp), %rax
+	movq	$0, -32(%rbp)
+	movq	$0, -24(%rbp)
+	movl	$0, -16(%rbp)
+	leaq	-32(%rbp), %rax
 	movl	$256, %edx
 	movq	%rax, %rsi
 	movl	$0, %edi
