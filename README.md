@@ -21,3 +21,23 @@ You are now able to run the executable named `challenge1`.
 ./challenge1
 ```
 At this point, you can type a string that will go into the program. It's up to you to figure out the rest ;).
+
+
+<br/>
+<br/>
+
+# Compiling the Source yourself
+You do not need to compile from the files in the Source folder. However, if you desire to know how to compile these files into the .s assembly files, this is the command you use:
+```bash
+gcc <filename>.c -fno-stack-protector -S -o <output name>.s -O0
+```
+
+<br/>
+
+## What each argument does
+| Argument    | Description |
+| ---------   | --------    |
+| -fno-stack-protector | This argument prevents the stack from using security functions that make buffer overflow attacks difficult to perform. |
+| -S    | This flag compiles the `.c` file to assembly as a `.s` file.|
+| -o   | This flag allows you to pick the name for the compiled file. |
+| -O0  | This flag forces the compiler to use no optimizations, which makes the assembly file (`.s` file) easier to read.

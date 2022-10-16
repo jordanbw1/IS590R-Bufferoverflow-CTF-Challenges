@@ -3,7 +3,7 @@
 	.section	.rodata
 	.align 8
 .LC0:
-	.string	"Wow! Here's the secret flag byu22ind{ThisIsJustTheBeginning;)}"
+	.string	"Wow! Here's the secret flag byu22ind{ThisIsntEvenMyFinalForm}"
 	.align 8
 .LC1:
 	.string	"I guess you're not cool enough to see my secret"
